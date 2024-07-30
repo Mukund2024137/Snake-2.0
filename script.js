@@ -46,7 +46,9 @@ const changeDirection = e => {
 }
 
 // Calling changeDirection on each key click and passing key dataset value as an object
-controls.forEach(button => button.addEventListener("click", () => changeDirection({ key: button.dataset.key })));
+controls.forEach(key => {
+    key.addEventListener("click", () => console.log())
+})
 
 const initGame = () => {
     if(gameOver) return handleGameOver();
